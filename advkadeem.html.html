@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<title>sweeney</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/adv.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html, p  {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+  }
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('hand.png');
+    min-height: 100%;
+
+}
+
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("photoshop-pic.jpg");
+    min-height: 500px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("seniorpic.jpg");
+    min-height: 500px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.lil{
+  width: 300px;
+  height: 700px;
+  padding-bottom: 30px;
+}
+footer{
+  position:absolute;
+}
+.brother{
+  height: 50%;
+}
+.cadavid{
+  height: 300px;
+}
+.lax{
+  float: right;
+  height: 25%;
+  width: 25%;
+  padding: 10px;
+  margin-right: 5px;
+}
+</style>
+<body>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">LIFE</span> <span class="w3-hide-small"> ON </span> THE WEB</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b>KADEEM SWEENEY</b></p><br>
+      <img src="babypic.jpg" class="lil" alt="babypic" >
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p class="me">My name is Kadeem H. Sweeney. I currently attend the University of Connecticut (UConn) in Stamford as a
+        Digital Media Major. However as a child I would've never imagined attending such a wonderful university or
+        even coming to the United States. I was born in Westmoreland Jamaica on September, 26, 1996. I lived in
+        Jamaica with my mom, older sister, grandma, two aunts and two younger Cousins. Basically my mother's side
+        of my family. I lived in Jamaica for eleven years of my life until I moved. At this point I’ve lived in the
+        states equally as long however, I didn't move to the states until February of the year 2008. One day I came
+        home from school and my mother was telling me how my father wanted me to come live with him in Stamford
+        Connecticut. After continuous discussions she convinced me to go live with my dad because I would have
+        a better opportunity to succeed in the states. Coming to the states was my second time on an airplane
+        and the experience was awesome. I was an unaccompanied minor so the flight attendant let me and my
+        brother sit first class. Also she allowed me to speak on the mike and tell everyone they could
+        unbuckle their seatbelts and move around. But the best part of the flight was when we landed and were
+         departing the flight attendant took me and my brother into the captain’s booth and we got to meet the
+        captain and take a picture with the captain’s hat on. After all these things happened I decided
+       that moving to this country was the best decision of my life.
+      </p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide">lacrosse</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:80%"></div>
+  </div>
+  <p class="w3-wide">Web Design</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:75%"></div>
+  </div>
+  <p class="w3-wide">Photoshop</p>
+  <div class="w3-progress-container">
+    <div class="w3-progressbar" style="width:50%"></div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">PHOTOSHOP</span>
+  </div>
+</div>
+
+<div>
+  <P>
+
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest work.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="wayne.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wayne Electrical">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="flamin ant.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Flaming Man">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Cadavid.LOGO.png" style="width:100%" onclick="onClick(this)" class="cadavid" alt="Cadavid Pet Care">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="brother.png" style="width:100%" onclick="onClick(this)" class="brother" alt="brothers">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">LACROSSE</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">BLACK KNIGHTS</h3>
+  <img src="lax6.jpg" class="lax">
+  <P>   While in Jamaica my favorite sports consisted of football and cricket. Most of what I did other
+    than attend school was revolved around watching, playing or talking about football and cricket. To
+    me football was the greatest sport until I came to the U.S. and became involved in lacrosse. I did
+    not stop enjoying football however, lacrosse became my passion. I did not get into watching lacrosse
+     as much as I got into playing. It took a while before I became a lacrosse player. Upon arrival to
+      Connecticut in 2008 I was still in elementary school so all I could really do was play sports in gym.
+       After leaving elementary school I ended up playing baseball and doing wrestling and track in middle school.
+        However doing all these sports I never felt as happy as I did playing soccer until my freshman year
+        of high school. It was spring time (lacrosse season) and I was going to try out for baseball but one
+        of my friends convinced me to try out for lacrosse because they need players. At first I wasn’t going
+        to play but they convinced me. At the time I did not even know what lacrosse was But, I tried out and
+        made Junior varsity and just fell in love with the sport. I was still relatively new to it so it took
+         me a while to make varsity but I got there eventually. I practiced every single day, worked out and
+          practiced my ball skills. I literally played in rain, snow, hail whatever the weather. I trained super
+           hard to become a starter. First I was captain of the junior varsity squad and then I made varsity the
+           following year. I just enjoyed the game except for when my team loses. To me lax was one of the greatest
+            sports ever created and I just give thanks to the native Americans for creating the game.
+          </P>
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+
+    <div class="w3-col m8 w3-container w3-section">
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-opacity w3-hover-opacity-off">
+  <div class="w3-xlarge w3-padding-32">
+    <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+     <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+    <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+  </div>
+</footer>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+<!-- Google Map Location -->
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+</script>
+
+</body>
+</html>
